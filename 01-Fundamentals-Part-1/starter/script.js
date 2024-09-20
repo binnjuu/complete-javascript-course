@@ -7,3 +7,6 @@ let PI = 3.1415926;
 
 // 最常用的功能是
 console.log("this");
+
+// 檢查資料類型
+console.log(typeof PI);

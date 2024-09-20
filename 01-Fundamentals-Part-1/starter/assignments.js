@@ -4,9 +4,9 @@
 // 01 數值與變數
 // https://codingheroes.io/assignments/values-and-variables
 
-// let country = "Taiwan";
-// let continent = "Taipei";
-// let population = 2.495;
+let country = "Taiwan";
+let continent = "Taipei";
+let population = 2.495;
 
 // let message = `國家: ${country}, 縣市: ${continent}, 人口數(百萬): ${population}`;
 // console.log(message);
@@ -14,8 +14,8 @@
 ////////////////////////////////////////////////////////
 // 02 資料類型
 // https://codingheroes.io/assignments/data-types
-// let isIsland = true;
-// let language = "";
+let isIsland = true;
+let language = "Mandarin";
 
 // console.log(typeof isIsland);
 // console.log(typeof language);
@@ -34,15 +34,23 @@
 // 04 基礎運算符 + 05 字串模板
 // https://codingheroes.io/assignments/basic-operators
 // https://codingheroes.io/assignments/strings-and-template-literals
-let country = "Taiwan";
-let continent = "Taipei";
-let population = 2.495;
-let language = "Mandarin";
+// let half = population / 2;
+// let add1 = population + 1;
+// console.log(population > 6);
+// console.log(population < 33);
 
-let half = population / 2;
-let add1 = population + 1;
-console.log(population > 6);
-console.log(population < 33);
+// let description = `${continent} is in ${country}, and its ${population} million people speak ${language}`;
+// console.log(description);
 
-let description = `${continent} is in ${country}, and its ${population} million people speak ${language}`;
+////////////////////////////////////////////////////////
+// 06 if/else
+// https://codingheroes.io/assignments/taking-decisions-if-else-statements
+let description = "";
+if (population < 33) {
+  description = `${continent} is in ${country}, and its ${
+    33 - population
+  } million below average`;
+} else {
+  description = `${continent} is in ${country}, and is above average`;
+}
 console.log(description);

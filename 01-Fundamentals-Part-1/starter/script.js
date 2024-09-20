@@ -10,3 +10,9 @@ console.log("this");
 
 // 檢查資料類型
 console.log(typeof PI);
+
+// let、const、var
+let num = 1; // let是可更改的變數
+const PORT = 3000; // const是不可更改的變數
+
+var old = ""; // var是過時的宣告方式

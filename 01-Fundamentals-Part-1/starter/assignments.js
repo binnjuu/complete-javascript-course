@@ -14,8 +14,18 @@
 ////////////////////////////////////////////////////////
 // 資料類型
 // https://codingheroes.io/assignments/data-types
-let isIsland = true;
-let language = "";
+// let isIsland = true;
+// let language = "";
 
-console.log(typeof isIsland);
-console.log(typeof language);
+// console.log(typeof isIsland);
+// console.log(typeof language);
+
+////////////////////////////////////////////////////////
+// let、const、var
+// https://codingheroes.io/assignments/let-const-and-var
+let num = 1; // let是可更改的變數
+num = 2;
+const PORT = 3000; // const是不可更改的變數
+PORT = 5000;
+var old = ""; // var是過時的宣告方式
+dontdothis = ""; // 建議避免這種宣告方式

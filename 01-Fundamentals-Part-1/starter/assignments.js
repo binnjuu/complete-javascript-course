@@ -31,8 +31,9 @@
 // dontdothis = ""; // 建議避免這種宣告方式
 
 ////////////////////////////////////////////////////////
-// 04 基礎運算符
+// 04 基礎運算符 + 05 字串模板
 // https://codingheroes.io/assignments/basic-operators
+// https://codingheroes.io/assignments/strings-and-template-literals
 let country = "Taiwan";
 let continent = "Taipei";
 let population = 2.495;

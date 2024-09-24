@@ -72,3 +72,9 @@ console.log(Boolean(""));
 console.log(Boolean(undefined));
 console.log(Boolean(null));
 console.log(Boolean(NaN));
+
+// 也可以自己進行數值轉換
+let user_input = Number("1234");
+
+console.log(typeof user_input);
+console.log(typeof String(user_input));

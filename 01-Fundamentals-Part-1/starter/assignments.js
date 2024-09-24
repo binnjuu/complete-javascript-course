@@ -45,12 +45,30 @@ let language = "Mandarin";
 ////////////////////////////////////////////////////////
 // 06 if/else
 // https://codingheroes.io/assignments/taking-decisions-if-else-statements
-let description = "";
-if (population < 33) {
-  description = `${continent} is in ${country}, and its ${
-    33 - population
-  } million below average`;
-} else {
-  description = `${continent} is in ${country}, and is above average`;
-}
-console.log(description);
+// let description = "";
+// if (population < 33) {
+//   description = `${continent} is in ${country}, and its ${
+//     33 - population
+//   } million below average`;
+// } else {
+//   description = `${continent} is in ${country}, and is above average`;
+// }
+// console.log(description);
+
+////////////////////////////////////////////////////////
+// 07 數值轉換與強制轉換
+// https://codingheroes.io/assignments/type-conversion-and-coercion
+console.log("9" - "5"); // -> 4 兩個字串做減法運算會被強制轉為數字
+console.log("19" - "13" + "17"); // -> '617' 兩個字串相加不會被強制轉換
+console.log("19" - "13" + 17); // -> 23 字串加上數字會被強制轉換為數字處理
+console.log("123" < 57); // -> false 字串與數字比較大小時會被強制轉換為數字
+console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143
+
+// 布林值轉換
+// 只有以下五種數值會被視為false
+// 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));

@@ -82,22 +82,32 @@ let language = "Mandarin";
 ////////////////////////////////////////////////////////
 // 08 == vs ===
 // https://codingheroes.io/assignments/equality-operators-vs
-const numNeighbours = prompt("你的國家有幾個鄰國?");
+// const numNeighbours = prompt("你的國家有幾個鄰國?");
 
-console.log("==");
-if (numNeighbours == 1) {
-  console.log("只有1個!");
-} else if (numNeighbours > 1) {
-  console.log("不只1個!");
-} else {
-  console.log("沒有半個:(");
-}
+// console.log("==");
+// if (numNeighbours == 1) {
+//   console.log("只有1個!");
+// } else if (numNeighbours > 1) {
+//   console.log("不只1個!");
+// } else {
+//   console.log("沒有半個:(");
+// }
 
-console.log("===");
-if (numNeighbours === 1) {
-  console.log("只有1個!");
-} else if (numNeighbours > 1) {
-  console.log("不只1個!");
+// console.log("===");
+// if (numNeighbours === 1) {
+//   console.log("只有1個!");
+// } else if (numNeighbours > 1) {
+//   console.log("不只1個!");
+// } else {
+//   console.log("沒有半個:(");
+// }
+
+////////////////////////////////////////////////////////
+// 09 邏輯運算子
+// https://codingheroes.io/assignments/logical-operators
+
+if (language.toLowerCase() === "english" && population < 50 && !isIsland) {
+  console.log(`你可以住在${country}!`);
 } else {
-  console.log("沒有半個:(");
+  console.log(`${country}不符合你的條件:(`);
 }

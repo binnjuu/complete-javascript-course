@@ -106,8 +106,33 @@ let language = "Mandarin";
 // 09 邏輯運算子
 // https://codingheroes.io/assignments/logical-operators
 
-if (language.toLowerCase() === "english" && population < 50 && !isIsland) {
-  console.log(`你可以住在${country}!`);
-} else {
-  console.log(`${country}不符合你的條件:(`);
+// if (language.toLowerCase() === "english" && population < 50 && !isIsland) {
+//   console.log(`你可以住在${country}!`);
+// } else {
+//   console.log(`${country}不符合你的條件:(`);
+// }
+
+////////////////////////////////////////////////////////
+// 10 switch表達式
+// https://codingheroes.io/assignments/the-switch-statement.html
+
+switch (language.toLowerCase()) {
+  case "chinese":
+  case "mandarin":
+    console.log("MOST number of native speakers!");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "english":
+    console.log("3rd place");
+    break;
+  case "hindi":
+    console.log("Number 4");
+    break;
+  case "arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Great language too :D");
 }

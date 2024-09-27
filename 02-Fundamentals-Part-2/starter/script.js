@@ -26,7 +26,9 @@ console.log(`${percentageOfWorld1(222)}%`);
 
 console.log("---");
 
-const percentageOfWorld2 = (population) => (population / 7900) * 100;
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
 console.log(`${percentageOfWorld2(2.4)}%`);
 console.log(`${percentageOfWorld2(54)}%`);
 console.log(`${percentageOfWorld2(222)}%`);

@@ -17,29 +17,41 @@
 ////////////////////////////////////////////////////////
 // 02 函式聲明與表達式
 // https://codingheroes.io/assignments/function-declarations-vs-expressions.html
-console.log("函式聲明");
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
-console.log(`${percentageOfWorld1(2.4)}%`);
-console.log(`${percentageOfWorld1(54)}%`);
-console.log(`${percentageOfWorld1(222)}%`);
+// console.log("函式聲明");
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
+// console.log(`${percentageOfWorld1(2.4)}%`);
+// console.log(`${percentageOfWorld1(54)}%`);
+// console.log(`${percentageOfWorld1(222)}%`);
 
-console.log("---");
-console.log("函式表達式");
-const percentageOfWorld2 = function (population) {
-  return (population / 7900) * 100;
-};
-console.log(`${percentageOfWorld2(2.4)}%`);
-console.log(`${percentageOfWorld2(54)}%`);
-console.log(`${percentageOfWorld2(222)}%`);
+// console.log("---");
+// console.log("函式表達式");
+// const percentageOfWorld2 = function (population) {
+//   return (population / 7900) * 100;
+// };
+// console.log(`${percentageOfWorld2(2.4)}%`);
+// console.log(`${percentageOfWorld2(54)}%`);
+// console.log(`${percentageOfWorld2(222)}%`);
 
 ////////////////////////////////////////////////////////
 // 03 箭頭函式
 // https://codingheroes.io/assignments/arrow-functions
-console.log("---");
-console.log("箭頭函式");
+// console.log("---");
+// console.log("箭頭函式");
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
-console.log(`${percentageOfWorld3(2.4)}%`);
-console.log(`${percentageOfWorld3(54)}%`);
-console.log(`${percentageOfWorld3(222)}%`);
+// console.log(`${percentageOfWorld3(2.4)}%`);
+// console.log(`${percentageOfWorld3(54)}%`);
+// console.log(`${percentageOfWorld3(222)}%`);
+
+////////////////////////////////////////////////////////
+// 04 函式呼叫其他函式
+// https://codingheroes.io/assignments/functions-calling-other-functions
+const describePopulation = (country, population) => {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld3(
+    population
+  )}% of the world`;
+};
+console.log(describePopulation("Meme", 2.4));
+console.log(describePopulation("Youyou", 222));
+console.log(describePopulation("Hehe", 2722));

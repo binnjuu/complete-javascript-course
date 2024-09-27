@@ -2,6 +2,7 @@
 
 ////////////////////////////////////////////////////////
 // 01 function
+// https://codingheroes.io/assignments/functions
 function describeCountry(country, population, capitaCity) {
   return `${country} has ${population} million people and its capital city is ${capitaCity}`;
 }

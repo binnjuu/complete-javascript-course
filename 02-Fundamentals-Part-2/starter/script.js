@@ -59,15 +59,52 @@ const percentageOfWorld3 = (population) => (population / 7900) * 100;
 ////////////////////////////////////////////////////////
 // 05 陣列
 // https://codingheroes.io/assignments/introduction-to-arrays
-const describePopulation = (population) => {
-  return percentageOfWorld3(population);
-};
-const populations = [2.24, 231, 42.5, 33.2];
-console.log(populations.length === 4);
-const percentage = new Array(
-  describePopulation(populations[0]),
-  describePopulation(populations[1]),
-  describePopulation(populations[2]),
-  describePopulation(populations[3])
-);
-console.log(percentage);
+// const describePopulation = (population) => {
+//   return percentageOfWorld3(population);
+// };
+// const populations = [2.24, 231, 42.5, 33.2];
+// console.log(populations.length === 4);
+// const percentage = new Array(
+//   describePopulation(populations[0]),
+//   describePopulation(populations[1]),
+//   describePopulation(populations[2]),
+//   describePopulation(populations[3])
+// );
+// console.log(percentage);
+
+////////////////////////////////////////////////////////
+// 06 陣列基礎操作
+// https://codingheroes.io/assignments/basic-array-operations-methods
+const neighbours = ["neighbour1", "neighbour2", "neighbour3"];
+
+// 在陣列結尾插入元素
+neighbours.push("neighbour4");
+console.log(neighbours);
+
+// 移除陣列最後一個元素
+console.log(neighbours.pop()); // 會回傳移除了什麼
+console.log(neighbours);
+
+// 檢查陣列是否包含某個值，使用===判定
+if (neighbours.includes("Germany")) {
+  console.log("Probably not a central european country :D");
+}
+
+// 修改元素
+neighbours[neighbours.indexOf("neighbour2")] = "new_neighbour2";
+console.log(neighbours);
+
+// 在陣列開頭插入元素
+neighbours.unshift("test1");
+console.log(neighbours);
+
+// 移除開頭第一個元素
+console.log(neighbours.shift("test1")); // 會回傳移除了什麼
+console.log(neighbours);
+
+// 檢查陣列長度
+console.log(neighbours.length);
+
+// 在插入資料的同時檢查陣列長度
+console.log(neighbours.push("test1")); // 在結尾插入資料
+console.log(neighbours.unshift("test1")); // 在開頭插入元素

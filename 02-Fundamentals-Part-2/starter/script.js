@@ -47,11 +47,27 @@ const percentageOfWorld3 = (population) => (population / 7900) * 100;
 ////////////////////////////////////////////////////////
 // 04 函式呼叫其他函式
 // https://codingheroes.io/assignments/functions-calling-other-functions
-const describePopulation = (country, population) => {
-  return `${country} has ${population} million people, which is about ${percentageOfWorld3(
-    population
-  )}% of the world`;
+// const describePopulation = (country, population) => {
+//   return `${country} has ${population} million people, which is about ${percentageOfWorld3(
+//     population
+//   )}% of the world`;
+// };
+// console.log(describePopulation("Meme", 2.4));
+// console.log(describePopulation("Youyou", 222));
+// console.log(describePopulation("Hehe", 2722));
+
+////////////////////////////////////////////////////////
+// 05 陣列
+// https://codingheroes.io/assignments/introduction-to-arrays
+const describePopulation = (population) => {
+  return percentageOfWorld3(population);
 };
-console.log(describePopulation("Meme", 2.4));
-console.log(describePopulation("Youyou", 222));
-console.log(describePopulation("Hehe", 2722));
+const populations = [2.24, 231, 42.5, 33.2];
+console.log(populations.length === 4);
+const percentage = new Array(
+  describePopulation(populations[0]),
+  describePopulation(populations[1]),
+  describePopulation(populations[2]),
+  describePopulation(populations[3])
+);
+console.log(percentage);

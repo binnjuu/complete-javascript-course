@@ -39,7 +39,7 @@
 // https://codingheroes.io/assignments/arrow-functions
 // console.log("---");
 // console.log("箭頭函式");
-const percentageOfWorld3 = (population) => (population / 7900) * 100;
+// const percentageOfWorld3 = (population) => (population / 7900) * 100;
 // console.log(`${percentageOfWorld3(2.4)}%`);
 // console.log(`${percentageOfWorld3(54)}%`);
 // console.log(`${percentageOfWorld3(222)}%`);
@@ -75,36 +75,57 @@ const percentageOfWorld3 = (population) => (population / 7900) * 100;
 ////////////////////////////////////////////////////////
 // 06 陣列基礎操作
 // https://codingheroes.io/assignments/basic-array-operations-methods
-const neighbours = ["neighbour1", "neighbour2", "neighbour3"];
+// const neighbours = ["neighbour1", "neighbour2", "neighbour3"];
 
-// 在陣列結尾插入元素
-neighbours.push("neighbour4");
-console.log(neighbours);
+// // 在陣列結尾插入元素
+// neighbours.push("neighbour4");
+// console.log(neighbours);
 
-// 移除陣列最後一個元素
-console.log(neighbours.pop()); // 會回傳移除了什麼
-console.log(neighbours);
+// // 移除陣列最後一個元素
+// console.log(neighbours.pop()); // 會回傳移除了什麼
+// console.log(neighbours);
 
-// 檢查陣列是否包含某個值，使用===判定
-if (neighbours.includes("Germany")) {
-  console.log("Probably not a central european country :D");
-}
+// // 檢查陣列是否包含某個值，使用===判定
+// if (neighbours.includes("Germany")) {
+//   console.log("Probably not a central european country :D");
+// }
 
-// 修改元素
-neighbours[neighbours.indexOf("neighbour2")] = "new_neighbour2";
-console.log(neighbours);
+// // 修改元素
+// neighbours[neighbours.indexOf("neighbour2")] = "new_neighbour2";
+// console.log(neighbours);
 
-// 在陣列開頭插入元素
-neighbours.unshift("test1");
-console.log(neighbours);
+// // 在陣列開頭插入元素
+// neighbours.unshift("test1");
+// console.log(neighbours);
 
-// 移除開頭第一個元素
-console.log(neighbours.shift("test1")); // 會回傳移除了什麼
-console.log(neighbours);
+// // 移除開頭第一個元素
+// console.log(neighbours.shift("test1")); // 會回傳移除了什麼
+// console.log(neighbours);
 
-// 檢查陣列長度
-console.log(neighbours.length);
+// // 檢查陣列長度
+// console.log(neighbours.length);
 
-// 在插入資料的同時檢查陣列長度
-console.log(neighbours.push("test1")); // 在結尾插入資料
-console.log(neighbours.unshift("test1")); // 在開頭插入元素
+// // 在插入資料的同時檢查陣列長度
+// console.log(neighbours.push("test1")); // 在結尾插入資料
+// console.log(neighbours.unshift("test1")); // 在開頭插入元素
+
+////////////////////////////////////////////////////////
+// 07 物件
+// https://codingheroes.io/assignments/introduction-to-objects
+const myCountry = {
+  country: "Taiwan",
+  capital: "Taipei",
+  language: "Mandarin",
+  population: 2.45,
+  neighbours: ["neighbour1", "neighbour2", "neighbour3"],
+};
+
+// 有兩種訪問物件內容的方式
+console.log(myCountry.country);
+console.log(myCountry["country"]);
+
+// 也可以用於新增內容或修改內容
+myCountry["country"] = "mymymy";
+myCountry.new = "hihihi";
+console.log(myCountry.country);
+console.log(myCountry["new"]);

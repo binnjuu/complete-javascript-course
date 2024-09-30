@@ -117,19 +117,34 @@ const myCountry = {
   capital: "Taipei",
   language: "Mandarin",
   population: 2.45,
-  neighbours: ["neighbour1", "neighbour2", "neighbour3"],
+  neighbours: [],
+
+  describe: function () {
+    console.log(this);
+  },
+
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length > 0 ? true : false;
+  },
 };
 
 ////////////////////////////////////////////////////////
 // 08 物件的點vs中括號
-//https://codingheroes.io/assignments/dot-vs-bracket-notation
+// https://codingheroes.io/assignments/dot-vs-bracket-notation
 
-// 有兩種訪問物件內容的方式
-console.log(myCountry.country);
-console.log(myCountry["country"]);
+// // 有兩種訪問物件內容的方式
+// console.log(myCountry.country);
+// console.log(myCountry["country"]);
 
-// 也可以用於新增內容或修改內容
-myCountry["country"] = "mymymy";
-myCountry.new = "hihihi";
-console.log(myCountry.country);
-console.log(myCountry["new"]);
+// // 也可以用於新增內容或修改內容
+// myCountry["country"] = "mymymy";
+// myCountry.new = "hihihi";
+// console.log(myCountry.country);
+// console.log(myCountry["new"]);
+
+////////////////////////////////////////////////////////
+// 09 物件函式與this
+// https://codingheroes.io/assignments/object-methods
+myCountry.describe();
+myCountry.checkIsland();
+console.log(`is Island: ${myCountry.isIsland}`);

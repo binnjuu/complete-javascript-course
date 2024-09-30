@@ -120,6 +120,10 @@ const myCountry = {
   neighbours: ["neighbour1", "neighbour2", "neighbour3"],
 };
 
+////////////////////////////////////////////////////////
+// 08 物件的點vs中括號
+//https://codingheroes.io/assignments/dot-vs-bracket-notation
+
 // 有兩種訪問物件內容的方式
 console.log(myCountry.country);
 console.log(myCountry["country"]);

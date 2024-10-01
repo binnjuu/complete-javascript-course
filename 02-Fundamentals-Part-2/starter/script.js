@@ -171,15 +171,27 @@ const populations = [2.24, 231, 42.5, 33.2];
 ////////////////////////////////////////////////////////
 // 12 向後迴圈與多重迴圈
 // https://codingheroes.io/assignments/looping-backwards-and-loops-in-loops
-const listOfNeighbours = [
-  ["Canada", "Mexico"],
-  ["Spain"],
-  ["Norway", "Sweden", "Russia"],
-];
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
 
-console.log("向後迴圈");
-for (let i = listOfNeighbours.length - 1; i >= 0; i--) {
-  for (let n = listOfNeighbours[i].length - 1; n >= 0; n--) {
-    console.log(listOfNeighbours[i][n]);
-  }
+// console.log("向後迴圈");
+// for (let i = listOfNeighbours.length - 1; i >= 0; i--) {
+//   for (let n = listOfNeighbours[i].length - 1; n >= 0; n--) {
+//     console.log(listOfNeighbours[i][n]);
+//   }
+// }
+
+////////////////////////////////////////////////////////
+// 13 while迴圈
+// https://codingheroes.io/assignments/the-while-loop
+let percentages2 = [];
+let i = 0;
+while (i < populations.length) {
+  percentages2.push(percentageOfWorld3(populations[i]));
+  i++;
 }
+
+console.log(percentages2);

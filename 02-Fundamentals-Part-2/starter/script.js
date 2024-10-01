@@ -145,6 +145,13 @@ const myCountry = {
 ////////////////////////////////////////////////////////
 // 09 物件函式與this
 // https://codingheroes.io/assignments/object-methods
-myCountry.describe();
-myCountry.checkIsland();
-console.log(`is Island: ${myCountry.isIsland}`);
+// myCountry.describe();
+// myCountry.checkIsland();
+// console.log(`is Island: ${myCountry.isIsland}`);
+
+////////////////////////////////////////////////////////
+// 10 For迴圈
+// https://codingheroes.io/assignments/iteration-the-for-loop
+for (let i = 1; i <= 50; i++) {
+  console.log(`Voter number ${i} is currently voting`);
+}

@@ -159,11 +159,27 @@ const populations = [2.24, 231, 42.5, 33.2];
 ////////////////////////////////////////////////////////
 // 11 在陣列使用迴圈，中斷與繼續
 // https://codingheroes.io/assignments/looping-arrays-breaking-and-continuing
-let percentages2 = [];
-for (let i = 0; i < populations.length; i++) {
-  percentages2.push(percentageOfWorld3(populations[i]));
+// let percentages2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//   percentages2.push(percentageOfWorld3(populations[i]));
 
-  // break; 中斷迴圈執行
-  // continue; 跳過以下程式碼並執行下一次迴圈
+//   // break; 中斷迴圈執行
+//   // continue; 跳過以下程式碼並執行下一次迴圈
+// }
+// console.log(percentages2);
+
+////////////////////////////////////////////////////////
+// 12 向後迴圈與多重迴圈
+// https://codingheroes.io/assignments/looping-backwards-and-loops-in-loops
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+console.log("向後迴圈");
+for (let i = listOfNeighbours.length - 1; i >= 0; i--) {
+  for (let n = listOfNeighbours[i].length - 1; n >= 0; n--) {
+    console.log(listOfNeighbours[i][n]);
+  }
 }
-console.log(percentages2);

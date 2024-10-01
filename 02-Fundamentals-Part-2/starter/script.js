@@ -39,7 +39,7 @@
 // https://codingheroes.io/assignments/arrow-functions
 // console.log("---");
 // console.log("箭頭函式");
-// const percentageOfWorld3 = (population) => (population / 7900) * 100;
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
 // console.log(`${percentageOfWorld3(2.4)}%`);
 // console.log(`${percentageOfWorld3(54)}%`);
 // console.log(`${percentageOfWorld3(222)}%`);
@@ -62,7 +62,7 @@
 // const describePopulation = (population) => {
 //   return percentageOfWorld3(population);
 // };
-// const populations = [2.24, 231, 42.5, 33.2];
+const populations = [2.24, 231, 42.5, 33.2];
 // console.log(populations.length === 4);
 // const percentage = new Array(
 //   describePopulation(populations[0]),
@@ -112,21 +112,21 @@
 ////////////////////////////////////////////////////////
 // 07 物件
 // https://codingheroes.io/assignments/introduction-to-objects
-const myCountry = {
-  country: "Taiwan",
-  capital: "Taipei",
-  language: "Mandarin",
-  population: 2.45,
-  neighbours: [],
+// const myCountry = {
+//   country: "Taiwan",
+//   capital: "Taipei",
+//   language: "Mandarin",
+//   population: 2.45,
+//   neighbours: [],
 
-  describe: function () {
-    console.log(this);
-  },
+//   describe: function () {
+//     console.log(this);
+//   },
 
-  checkIsland: function () {
-    this.isIsland = this.neighbours.length > 0 ? true : false;
-  },
-};
+//   checkIsland: function () {
+//     this.isIsland = this.neighbours.length > 0 ? true : false;
+//   },
+// };
 
 ////////////////////////////////////////////////////////
 // 08 物件的點vs中括號
@@ -152,6 +152,18 @@ const myCountry = {
 ////////////////////////////////////////////////////////
 // 10 For迴圈
 // https://codingheroes.io/assignments/iteration-the-for-loop
-for (let i = 1; i <= 50; i++) {
-  console.log(`Voter number ${i} is currently voting`);
+// for (let i = 1; i <= 50; i++) {
+//   console.log(`Voter number ${i} is currently voting`);
+// }
+
+////////////////////////////////////////////////////////
+// 11 在陣列使用迴圈，中斷與繼續
+// https://codingheroes.io/assignments/looping-arrays-breaking-and-continuing
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld3(populations[i]));
+
+  // break; 中斷迴圈執行
+  // continue; 跳過以下程式碼並執行下一次迴圈
 }
+console.log(percentages2);
